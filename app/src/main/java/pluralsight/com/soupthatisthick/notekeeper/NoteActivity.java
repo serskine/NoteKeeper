@@ -56,7 +56,6 @@ public class NoteActivity extends AppCompatActivity {
 
     private void readDisplayStateValues() {
         Intent intent = getIntent();
-//        noteInfo = intent.getParcelableExtra(NOTE_POSITION);
         int notePosition = intent.getIntExtra(NOTE_POSITION, POSITION_NOT_SET);
         isNewNote = (notePosition != POSITION_NOT_SET);
     }
